@@ -1,0 +1,38 @@
+﻿@page
+@using RiverBank.Service.Localization
+@model RiverBank.Service.Pages.Calculators.LoanCalculatorModel
+@inject IStringLocalizer<LoanCalculatorModel> localizer
+@inject IHtmlLocalizer<LoanCalculatorModel> htmlLocalizer
+@{
+    ViewData["Title"] = localizer[LocalizationResourceKeys.LoanCalculatorTitle];
+}
+
+<div class="text-center">
+    <h1 class="display-4">@localizer[LocalizationResourceKeys.LoanCalculatorFormTitle]</h1>
+    <form method="get">
+        <div class="form-field-container">
+            <label>@localizer[LocalizationResourceKeys.LoanCalculatorFormPrincipalAmountLabel]</label>
+            <input type="text" asp-for="Amount" />
+            <span asp-validation-for="Amount" class="form-validation-error"></span>
+        </div>
+
+        <div class="form-field-container">
+            <label>@localizer[LocalizationResourceKeys.LoanCalculatorFormTermLabel]</label>
+            <select asp-for="TermYears"
+                    asp-items="Model.SelectableTermYears">
+                <option value="">@localizer[LocalizationResourceKeys.LoanCalculatorFormTermSelectorPlaceholder]</option>
+            </select>
+            <span asp-validation-for="TermYears" class="form-validation-error"></span>
+        </div>
+
+        <div class=" form-field-container">
+            <label>@localizer[LocalizationResourceKeys.LoanCalculatorFormInterestRateLabel]</label>
+            <label class="form-label-standalone">@(string.Format("{0:P2}", Model.InterestRate))</label>
+        </div>
+
+        <button type="submit">@localizer[LocalizationResourceKeys.LoanCalculatorFormSubmitButtonText]</button>
+    </form>
+    <h4>
+        @(Model.OutputMessage)
+    </h4>
+</div>

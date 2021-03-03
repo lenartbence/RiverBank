@@ -1,0 +1,13 @@
+﻿@page
+@using RiverBank.Service.Localization
+@model IndexModel
+@inject IStringLocalizer<IndexModel> localizer
+@inject IHtmlLocalizer<IndexModel> htmlLocalizer
+@{
+    ViewData["Title"] = localizer[LocalizationResourceKeys.IndexTitle];
+}
+
+<div class="text-center">
+    <h1 class="display-4">@localizer[LocalizationResourceKeys.IndexWelcome]</h1>
+    <p>@htmlLocalizer[LocalizationResourceKeys.IndexRedirectToCalculatorMessage]</p>
+</div>

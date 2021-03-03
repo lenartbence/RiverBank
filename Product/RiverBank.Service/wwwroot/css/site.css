@@ -1,0 +1,125 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+img.navbar-logo {
+    height: 50px;
+}
+
+/* Provide sufficient contrast against white background */
+a, a:hover {
+    color: #f22f1d;
+}
+
+button {
+    color: #fff;
+    background-color: #dd2a1b;
+    border: none;
+    padding: 3px 20px;
+    border-radius: 6px;
+}
+
+    button:hover {
+        background-color: #ff311f;
+    }
+
+    button:focus {
+        outline: 0
+    }
+
+    button:active {
+        background-color: #73160e;
+    }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #dd2a1b;
+    border-color: #d92a1a;
+}
+
+input[type=text], select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 8px 20px;
+}
+
+button[type=submit] {
+    width: 35%;
+    margin: 30px 0;
+    padding: 8px 24px;
+}
+
+.form-field-container {
+    width: 35%;
+    margin: 0 auto 10px;
+}
+
+.form-label-standalone {
+    display: block;
+    margin: auto;
+    font-weight: bold;
+}
+
+.form-validation-error {
+    color: #f22f1d;
+    display: block;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
