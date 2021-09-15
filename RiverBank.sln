@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{CA562393-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiverBank.Core_uTest", "Test\RiverBank.Core_uTest\RiverBank.Core_uTest.csproj", "{9D558D9E-E2F8-4EB0-A133-A8FA4BE4EA1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiverBank.Service_iTest", "Test\RiverBank.Service_iTest\RiverBank.Service_iTest.csproj", "{708B5E7A-D863-4B2F-A11B-1ACFB47E70EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{9D558D9E-E2F8-4EB0-A133-A8FA4BE4EA1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D558D9E-E2F8-4EB0-A133-A8FA4BE4EA1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D558D9E-E2F8-4EB0-A133-A8FA4BE4EA1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708B5E7A-D863-4B2F-A11B-1ACFB47E70EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708B5E7A-D863-4B2F-A11B-1ACFB47E70EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708B5E7A-D863-4B2F-A11B-1ACFB47E70EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708B5E7A-D863-4B2F-A11B-1ACFB47E70EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{99305076-765A-4996-B8E4-72C49CCA0E89} = {C861847D-730F-4A28-B055-1298E107F4A8}
 		{2DA3C9EA-D0B7-44BF-95DF-6FF530C3D248} = {C861847D-730F-4A28-B055-1298E107F4A8}
 		{9D558D9E-E2F8-4EB0-A133-A8FA4BE4EA1F} = {CA562393-0C11-45BB-84ED-9BCCEA0FCAE8}
+		{708B5E7A-D863-4B2F-A11B-1ACFB47E70EF} = {CA562393-0C11-45BB-84ED-9BCCEA0FCAE8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45D3B6B2-F1DF-4B39-9DFF-270A221C472C}

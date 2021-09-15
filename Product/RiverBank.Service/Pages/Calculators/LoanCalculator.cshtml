@@ -13,7 +13,7 @@
         <div class="form-field-container">
             <label>@localizer[LocalizationResourceKeys.LoanCalculatorFormPrincipalAmountLabel]</label>
             <input type="text" asp-for="Amount" />
-            <span asp-validation-for="Amount" class="form-validation-error"></span>
+            <span id="amount-error-message" asp-validation-for="Amount" class="form-validation-error"></span>
         </div>
 
         <div class="form-field-container">
@@ -32,7 +32,5 @@
 
         <button type="submit">@localizer[LocalizationResourceKeys.LoanCalculatorFormSubmitButtonText]</button>
     </form>
-    <h4>
-        @(Model.OutputMessage)
-    </h4>
+    <h4 id="output-message">@(Model.OutputMessage)</h4>
 </div>
