@@ -12,7 +12,13 @@ namespace RiverBank.Service_iTest
     [Timeout(10000)]
     public class CalculatorServiceTests
     {
-        private readonly WebApplicationFactory<Startup> _webAppFactory = new WebApplicationFactory<Startup>();
+        private WebApplicationFactory<Startup> _webAppFactory;
+
+        [SetUp]
+        public void SetUp()
+        {
+            _webAppFactory = new WebApplicationFactory<Startup>();
+        }
 
         [TearDown]
         public void TearDown()
